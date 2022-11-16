@@ -6,7 +6,7 @@ public class Aluno {
 	//Atributos da classe (sempre para ser acessado precisa do this)
 	private int id;
 	private String ra;
-	private String dfafadfa;
+	private String nome;
 	private String sobreNome;
 	private String nomeCompleto;
 	private String sexo;
