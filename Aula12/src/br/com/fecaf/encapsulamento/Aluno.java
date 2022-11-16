@@ -6,7 +6,7 @@ public class Aluno {
 	//Atributos da classe (sempre para ser acessado precisa do this)
 	private int id;
 	private String ra;
-	private String nome;
+	private String dfafadfa;
 	private String sobreNome;
 	private String nomeCompleto;
 	private String sexo;
@@ -16,18 +16,18 @@ public class Aluno {
 	private String tipoCurso;
 	
 	//Construtor
-	//Obs: Todo construtor sempre terá o nome da sua classe
+	//Obs: Todo construtor sempre terï¿½ o nome da sua classe
 	public Aluno (String tipoCurso) {
 		System.out.println("Construtor com tipo do Curso");
 		if(tipoCurso.toUpperCase().equals("G"))
-			this.tipoCurso = "Graduação";
+			this.tipoCurso = "Graduaï¿½ï¿½o";
 		else if (tipoCurso.toUpperCase().equals("P"))
-			this.tipoCurso = "Pós-Graduação";
+			this.tipoCurso = "Pï¿½s-Graduaï¿½ï¿½o";
 	}
 	//Sobrecarga de Construtores
 	public Aluno () {
-		System.out.println("Construtor padrão");
-		this.tipoCurso = "Graduação";
+		System.out.println("Construtor padrï¿½o");
+		this.tipoCurso = "Graduaï¿½ï¿½o";
 	}
 	//Sobrecarga de Construtores
 	public Aluno(String tipoCurso, int periodo) {
@@ -75,10 +75,10 @@ public class Aluno {
 		if (!this.nome.equals(null) && !this.sobreNome.equals(null))
 			this.nomeCompleto = this.nome + " " + this.sobreNome;
 		else
-			System.out.println("Nome ou sobreNome não pode ser vazio!");
+			System.out.println("Nome ou sobreNome nï¿½o pode ser vazio!");
 	}
 	
-	//Get nomeConpleto (Junção do nome e do sobreNome)
+	//Get nomeConpleto (Junï¿½ï¿½o do nome e do sobreNome)
 	public String getNomeCompleto() {
 		return this.nomeCompleto;
 	}
@@ -100,7 +100,7 @@ public class Aluno {
 			
 	}
 	
-	//Get descricaoSexo (Esse item será criado no momento de gravar 
+	//Get descricaoSexo (Esse item serï¿½ criado no momento de gravar 
 	//a letra correspondente ao sexo do aluno [M/F])
 	public String getDescricaoSexo() {
 		return this.descricaoSexo;
@@ -130,7 +130,7 @@ public class Aluno {
 	
 	}
 	
-	//Get idade (Será o calculado conforme o ano corrente e 
+	//Get idade (Serï¿½ o calculado conforme o ano corrente e 
 	//a data de nascimento do aluno)
 	public int getIdade() {
 		return this.idade;
@@ -142,8 +142,8 @@ public class Aluno {
 	}
 	
 	//Guarda o tipo do curso
-	//protected - significa que somente a própria classe e 
-	//as classes filhas (processo de herança entre classes) poderão ter acesso
+	//protected - significa que somente a prï¿½pria classe e 
+	//as classes filhas (processo de heranï¿½a entre classes) poderï¿½o ter acesso
 	protected void setTipoCurso(String tipoCurso) {
 		this.tipoCurso = tipoCurso;
 	}
@@ -152,7 +152,7 @@ public class Aluno {
 	
 	//Retorna o print de todos os dados referente a um aluno
 	public void getDadosAluno () {
-		System.out.println(" ################ Relatório de dados do aluno ##################");
+		System.out.println(" ################ Relatï¿½rio de dados do aluno ##################");
 		System.out.println("RA: " + this.getRa());
 		System.out.println("Nome: " + this.getNomeCompleto());
 		System.out.println("Sexo: [" + this.getSexo() + "]-" + this.getDescricaoSexo());
